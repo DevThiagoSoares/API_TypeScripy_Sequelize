@@ -5,10 +5,12 @@ import express from 'express';
 const app = express();
 const router = express.Router();
 
-router.get('/', (req, res) => res.json({hello: 'hello, world!'}));
+router.get('/', (req, res) => {res.json({hello: 'hello, world!'})});
 
-const PORT = process.env.PORT || 3000
+app.use(router);
+
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
-    console.log('Started')
+    console.log('Started');
 });
