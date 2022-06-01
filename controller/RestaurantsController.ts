@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { Restaurants } from '../src/models/restaurants';
+import { Restaurants } from '../src/models';
 
 export const RestaurantsController = {
 

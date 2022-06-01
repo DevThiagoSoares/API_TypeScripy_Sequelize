@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { Clients } from "../src/models/clients";
+import { Clients } from "../src/models";
 
 export const clientsController = {
     index: async (req: Request, res: Response) => {

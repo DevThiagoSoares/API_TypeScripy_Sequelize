@@ -7,7 +7,6 @@ module.exports = {
       clients_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        autoIncrement: true,
         references: {
           model: 'clients',
           key: 'id'
@@ -16,14 +15,11 @@ module.exports = {
       },
       average_stars_given: {
         type: Sequelize.DECIMAL,
-        allowNull: false
       },
       stars: {
         type: Sequelize.INTEGER,
-
-
       },
-      Comment: {
+      comments: {
         type: Sequelize.TEXT,
 
       },

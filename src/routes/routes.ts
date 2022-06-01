@@ -1,6 +1,7 @@
 import express from 'express';
 import { clientsController } from '../../controller/ClientsController';
 import { RestaurantsController } from '../../controller/RestaurantsController';
+import { ReviewsController } from '../../controller/ReviewsControles';
 
 const router = express.Router();
 
@@ -22,5 +23,8 @@ router.get('/clients/:id', clientsController.show);
 router.post('/clients', clientsController.save);
 router.put('/clients/', clientsController.update);
 router.delete('/clients/:id', clientsController.delete);
+
+//Routes Reviews
+router.get('/reviews', ReviewsController.index);
 
 export { router };
