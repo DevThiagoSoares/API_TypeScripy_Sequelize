@@ -20,7 +20,7 @@ router.delete('/restaurants/:id', RestaurantsController.delete);
 router.get('/clients', clientsController.index);
 router.get('/clients/:id', clientsController.show);
 router.post('/clients', clientsController.save);
-router.put('/clients/:id', clientsController.update);
+router.put('/clients/', clientsController.update);
 router.delete('/clients/:id', clientsController.delete);
 
 export { router };

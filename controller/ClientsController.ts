@@ -47,8 +47,7 @@ export const clientsController = {
 
     // PUT /candidates/:id
     update: async (req: Request, res: Response) => {
-        const { id } = req.params;
-        const { name, phone } = req.body;
+        const { id, name, phone } = req.body;
 
         try {
             const clients = await Clients.findByPk(id);
